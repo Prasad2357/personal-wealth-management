@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./style.css";
 
 function GoalForm() {
+  const location = useLocation();
   const [goalData, setGoalData] = useState(null);
   const [error, setError] = useState(null);
+
+  const riskCategory = location.state?.risk || "Unknown";
 
   // Handle form submission for goal calculation
   const handleSubmitGoal = async (e) => {
@@ -15,6 +19,7 @@ function GoalForm() {
       timeline_months: parseInt(e.target.timeline_months.value),
       predicted_savings: parseFloat(e.target.predicted_savings.value) || 0,
       // risk_tolerance: e.target.risk_tolerance.value,
+      risk_tolerance: riskCategory,
     };
 
     console.log("Submitting data: ", data);
@@ -75,6 +80,16 @@ function GoalForm() {
           />
         </div>
 
+        <div>
+          <label htmlFor="risk_tolerance">Risk Tolerance:</label>
+          <input
+            type="text"
+            name="risk_tolerance"
+            id="risk_tolerance"
+            value={riskCategory}
+            readOnly
+          />
+        </div>
 
 
         <button type="submit">Calculate Goal</button>

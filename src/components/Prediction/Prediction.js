@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import "./style.css";
 
@@ -14,6 +15,7 @@ function PredictionForm() {
 
   const [predictions, setPredictions] = useState(null);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -40,6 +42,14 @@ function PredictionForm() {
       setPredictions(data);
     } catch (err) {
       setError(err.message);
+    }
+  };
+
+  const handleNavigateToGoal = () => {
+    if (predictions) {
+      navigate("/goal", { state: { risk: predictions.Risk_Category } });
+    } else {
+      setError("Please get predictions first before proceeding to the Goal page.");
     }
   };
 
@@ -129,6 +139,8 @@ function PredictionForm() {
           <h2>Predictions</h2>
           <p>Predicted Savings: {predictions.Predicted_Savings}</p>
           <p>Predicted Percentage: {predictions.Predicted_Percentage}</p>
+          <p>Risk Category: {predictions.Risk_Category}</p>
+          <button onClick={handleNavigateToGoal}>Proceed to Goal</button>
         </div>
       )}
       {error && <p className="error">Error: {error}</p>}
