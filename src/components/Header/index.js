@@ -12,6 +12,12 @@ function Header() {
     navigate("/");
   }
 
+  function predict() {
+    navigate("/predict")
+  }
+  function goal(){
+    navigate("/goal")
+  }
   useEffect(() => {
     if (!user) {
       navigate("/");
@@ -22,18 +28,25 @@ function Header() {
 
   return (
     <div className="navbar">
-      <p className="navbar-heading">Financly.</p>
+      <p className="navbar-heading">MyFin Vision</p>
+      <div className="navbar-heading navbar-link" onClick={predict}>Predict Savings</div>
+      <div className="navbar-heading navbar-link" onClick={goal}>Predict Goal</div>
       {user ? (
-        <p className="navbar-link" onClick={logout}>
-          <span style={{ marginRight: "1rem" }}>
-            <img
-              src={user.photoURL ? user.photoURL : userSvg}
-              width={user.photoURL ? "32" : "24"}
-              style={{ borderRadius: "50%" }}
-            />
-          </span>
-          Logout
-        </p>
+
+        <div className="linking">
+
+
+          <p className="navbar-link" onClick={logout}>
+            <span style={{ marginRight: "1rem" }}>
+              <img
+                src={user.photoURL ? user.photoURL : userSvg}
+                width={user.photoURL ? "32" : "24"}
+                style={{ borderRadius: "50%" }}
+              />
+            </span>
+            Logout
+          </p>
+        </div>
       ) : (
         <></>
       )}

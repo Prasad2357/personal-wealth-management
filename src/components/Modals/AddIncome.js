@@ -76,6 +76,8 @@ function AddIncomeModal({
             <Select.Option value="salary">Salary</Select.Option>
             <Select.Option value="freelance">Freelance</Select.Option>
             <Select.Option value="investment">Investment</Select.Option>
+            <Select.Option value="business">Business</Select.Option>   
+            <Select.Option value="others">Others</Select.Option>
             {/* Add more tags here */}
           </Select>
         </Form.Item>
