@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-Personal Wealth Management
+#Personal Wealth Management
 ## Available Scripts
 
 In the project directory, you can run:
