@@ -1,0 +1,28 @@
+# Flask Backend Core Dependencies
+Flask==3.0.0
+Flask-Cors==4.0.0
+
+# Data Processing
+pandas==2.0.3
+numpy==1.24.3
+
+# Machine Learning & Model Serialization
+scikit-learn==1.3.2
+joblib==1.3.2
+scipy==1.11.4
+
+# HTTP Requests (optional, for future API integrations)
+requests==2.31.0
+
+# Utilities
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+
+# Optional: Jupyter for model training/analysis
+jupyter==1.0.0
+notebook==6.5.4
+ipython==8.12.0
+
+# Optional: Data visualization for analysis
+matplotlib==3.7.1
+seaborn==0.12.2

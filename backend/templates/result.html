@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <p>Predicted Desired Savings: {{ predicted_savings }}</p>
+    <p>Predicted Desired Savings Percentage: {{ predicted_percentage }}</p>
+    
+    <!-- Financial Goal Section -->
+    <h2>Goal Insights</h2>
+    <p>Your Financial Goal: {{ financial_goal }}</p>
+    <p>Estimated Time to Achieve Goal: {{ time_to_goal }} months</p>
+    <p>Recommended Monthly Savings: {{ recommended_savings }} </p>
+    
+    <a href="/">Make another prediction</a>
+</body>
+</html>

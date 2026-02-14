@@ -1,0 +1,93 @@
+# Python Virtual Environment
+backend/final_project/
+venv/
+env/
+ENV/
+.venv
+
+# Python Cache Files
+backend/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Node.js & Frontend
+node_modules/
+personal-finance-tracker/frontend/node_modules/
+personal-finance-tracker/frontend/build/
+personal-finance-tracker/frontend/.react/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies Lock Files
+package-lock.json
+yarn.lock
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+.firebase/
+firebase-debug.log
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-workspace
+*.sublime-project
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+backend/app.log
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Build Outputs
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+$RECYCLE.BIN/
+
+
+attachments/
+venv/
+
+*.pkl
+
+__pycache__/
