@@ -1,0 +1,85 @@
+.prediction-form {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .prediction-form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .prediction-form form div {
+    margin-bottom: 1rem;
+  }
+  
+  .prediction-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prediction-form input,
+  .prediction-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .prediction-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #20c997;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .prediction-form button:hover {
+    background-color: #24a07b;
+  }
+  
+  .predictions {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #e9f7ef;
+  }
+  
+  .predictions h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .goal-data {
+    margin-top: 2rem;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .goal-data h2 {
+    text-align: center;
+  }
+  
+  .goal-data ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .goal-data li {
+    font-size: 1.1rem;
+  }
+  
+  

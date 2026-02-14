@@ -1,0 +1,124 @@
+/* General styling for the form container */
+.goal-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form heading */
+.goal-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form fields */
+.goal-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.goal-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+.goal-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button */
+.goal-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #20c997;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.goal-form button:hover {
+    background-color: #24a07b;
+}
+
+/* Error message styling */
+.error {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Goal insights section */
+.goal-insights {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eef7ff;
+    border: 1px solid #cce5ff;
+}
+
+.goal-insights h2 {
+    text-align: center;
+    color: #004085;
+}
+
+.goal-insights p {
+    font-size: 14px;
+    color: #004085;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.goal-insights ul {
+    padding-left: 20px;
+}
+
+.goal-insights li {
+    font-size: 14px;
+    color: #004085;
+    margin-bottom: 5px;
+}
+
+/* Recommendations list styling */
+.goal-insights ul li {
+    list-style-type: disc;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .goal-form {
+        padding: 15px;
+    }
+
+    .goal-form h1 {
+        font-size: 20px;
+    }
+
+    .goal-form button {
+        font-size: 14px;
+    }
+
+    .goal-insights {
+        padding: 10px;
+    }
+}
