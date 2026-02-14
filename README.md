@@ -11,6 +11,8 @@ Personal Finance Tracker helps users:
 - **Analyze** spending patterns with interactive visualizations
 - **Authenticate** securely with Google accounts via Firebase
 
+![Dashboard Overview](assets/Dashboard_image.png)
+
 ## Project Structure
 
 ```
@@ -66,6 +68,8 @@ Personal Finance Tracker helps users:
 - **Transaction categorization**
 - Search and filter transactions by date/amount/category
 
+![Transaction Management](assets/transactions_image.png)
+
 ### 🤖 AI-Powered Financial Predictions
 The `/predict` endpoint analyzes user financial profiles:
 
@@ -77,6 +81,8 @@ The `/predict` endpoint analyzes user financial profiles:
 - City Tier (Tier 1/2/3)
 - Disposable Income
 - Total Expenses
+
+![Prediction Form](assets/prediction_form_image.png)
 
 **ML Models Used:**
 - **Regression Model 1**: Predicts optimal savings amount (in currency)
@@ -100,6 +106,8 @@ The `/goal` endpoint provides personalized recommendations:
 - Timeline (months)
 - Predicted Savings (from prediction model)
 - Risk Category
+
+![Goals Planning](assets/goals_image.png)
 
 **Calculations:**
 - Required monthly savings rate
@@ -128,6 +136,10 @@ The `/goal` endpoint provides personalized recommendations:
 - Interactive charts powered by **Ant Design Charts** (`@ant-design/charts`)
 - Real-time sum of income/expenses
 - Transaction history display
+
+### 📰 News & Analytics
+- News feed with financial news aggregation
+![News & Analytics](assets/news_image%20-%20Copy.png)
 
 ### 🗃️ Data Persistence
 - **Firestore** database for transaction storage
@@ -401,14 +413,12 @@ REACT_APP_FIREBASE_PROJECT_ID=personal-finance-tracker-e74e8
 ## Known Limitations & Future Work
 
 ### Current Limitations
-- News feed functionality commented out (NewsAPI integration pending)
 - Single-device session management
 - No mobile app version
 - Limited offline support
 
 ### Future Enhancements
 - 📱 Mobile app (React Native)
-- 📰 News feed with financial news aggregation
 - 💾 Data export to PDF/Excel
 - 🔔 Spending alerts and notifications
 - 📈 Advanced analytics and trend analysis
