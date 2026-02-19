@@ -6,7 +6,7 @@ A comprehensive full-stack personal wealth management application combining real
 
 Personal Finance Tracker helps users:
 - **Track** income and expenses in real-time
-- **Predict** optimal savings rates using machine learning models
+- **Predict** optimal savings rates using various machine learning models
 - **Plan** financial goals with AI-driven recommendations
 - **Analyze** spending patterns with interactive visualizations
 - **Authenticate** securely with Google accounts via Firebase
