@@ -99,7 +99,7 @@ The `/predict` endpoint analyzes user financial profiles:
 ```
 
 ### 🎯 Smart Savings Goals
-The `/goal` endpoint provides personalized recommendations:
+The `/goal` endpoint provides personalized recommendations for goal setting:
 
 **Input Parameters:**
 - Target Amount (₹)
